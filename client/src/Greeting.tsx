@@ -1,4 +1,4 @@
-import { trpc } from './utils/trpc';
+import { trpc } from './utils/trpc.ts';
 
 export function Greeting() {
   const greeting = trpc.greeting.useQuery({ name: 'tRPC user' });
